@@ -38,7 +38,7 @@ export function connectDeepgram(apiKey, onTranscript, onOpen) {
   
   };
 }
-//socket && socket.readyState === WebSocket.OPEN
+
 export function sendAudio(buffer) {
   if (!socket || socket.readyState !== WebSocket.OPEN) {
     return; 
@@ -53,3 +53,4 @@ export function closeDeepgram() {
     isReady = false;
   }
 }
+
